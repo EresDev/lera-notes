@@ -1,0 +1,22 @@
+{
+  "name": "lera-note",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EresDev/lera-notes.git"
+  },
+  "author": "EresDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EresDev/lera-notes/issues"
+  },
+  "homepage": "https://github.com/EresDev/lera-notes#readme",
+  "dependencies": {
+    "validator": "^10.8.0"
+  }
+}
