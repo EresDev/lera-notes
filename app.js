@@ -1,3 +1,3 @@
-const firstName = require('./user.js')
-
-console.log(firstName)
+const getNotes = require('./notes.js')
+const notes = getNotes()
+console.log(notes)
