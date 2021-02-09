@@ -5,7 +5,15 @@ const getNotes = require('./notes.js')
 
 yargs.version('1.1.0')
 console.log(yargs.argv)
-exit
+yargs.command({
+    command: 'add',
+    description: 'Add a note.', 
+    handler: function (){
+        console.log('Adding a note.')
+    }
+})
+
+exit 
 const command = process.argv[2]
 
 if(command === 'add'){
