@@ -1,8 +1,11 @@
 const chalk = require('chalk')
+const { exit } = require('yargs')
+const yargs = require('yargs')
 const getNotes = require('./notes.js')
 
-console.log(process.argv)
-
+yargs.version('1.1.0')
+console.log(yargs.argv)
+exit
 const command = process.argv[2]
 
 if(command === 'add'){
