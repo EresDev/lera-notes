@@ -40,7 +40,22 @@ const loadNotes = function () {
     }
 }
 
+const removeNote = function(title){
+    const notes = loadNotes()
+    const remainingNotes = notes.filter(function(note){
+        return note.title != title
+    });
+    
+    if(notes.length === remainingNotes.length){
+        console.log("Unable to find note with title: " + title)
+    } else {
+        saveNotes(remainingNotes)
+        console.log("Note removed with title: " + title)
+    }
+}
+
 module.exports = {
     getNotes: getNotes,
-    addNote: addNote
+    addNote: addNote,
+    removeNote: removeNote
 }
